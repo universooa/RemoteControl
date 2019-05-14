@@ -3,10 +3,62 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RemoteControl.MainPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" >
+            <Label
+                x:Name="label1"
+                Text="Welcome to Xamarin.Forms!"    
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+            />
+
+            <Button
+                Text="Stop"
+                Clicked="buttonClicked"
+                
+                />
+
+            <StackLayout Orientation="Horizontal">
+            <Button
+                Text="Red Up"
+                Clicked="RedUpbuttonClicked"
+            
+                />
+            <Button
+                Text="Red Down"
+                Clicked="RedDownbuttonClicked"
+            
+                />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+            <Button
+                Text="Green Up"
+                Clicked="GreenUpbuttonClicked"
+            
+                />
+            <Button
+                Text="Green Down"
+                Clicked="GreenDownbuttonClicked"
+            
+                />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+
+                <Button
+                Text="Blue Up"
+                Clicked="BlueUpbuttonClicked"
+            
+                />
+                <Button
+                Text="Blue Down"
+                Clicked="BlueDownbuttonClicked"
+            
+                />
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
